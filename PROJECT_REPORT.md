@@ -74,7 +74,7 @@ The queries are designed to help a bookstore:
 - Identify frequently ordered books.
 - Explore customer ordering patterns.
 
-**Note:** Actual business findings depend on the data loaded into MySQL. This report describes the analysis performed and does not claim specific sales trends or revenue totals.
+**Initial findings from the repository CSV files:** 500 book records, 500 customer records, and 500 order records are present. All order rows reference book and customer IDs found in the matching CSV files. Listed stock totals 25,056 copies; order quantities total 2,697 copies; and the sum of `Total_Amount` is 75,628.66 (currency is not specified in the source data). Mystery has the highest ordered quantity among genres at 504 copies. These figures were calculated from the CSV files and should be confirmed by running the verification queries in MySQL Workbench. They are not a claim that the SQL script was executed against the user's local server.
 
 ## 8. How to Run the Project
 
