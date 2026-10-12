@@ -1,5 +1,7 @@
 # Online Bookstore SQL Project
 
+![MySQL](https://img.shields.io/badge/SQL-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![Database](https://img.shields.io/badge/Database-Relational-4479A1?style=for-the-badge)
+
 ## Overview
 A MySQL portfolio project for exploring an online bookstore's catalog, customers, orders, revenue, and inventory. It uses MySQL Workbench and three CSV datasets.
 
