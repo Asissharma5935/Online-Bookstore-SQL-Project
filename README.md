@@ -1,29 +1,38 @@
 # Online Bookstore SQL Project
 
 ## Overview
-This project uses MySQL to build and query a simple online bookstore database. It includes tables for books, customers, and orders, along with queries for book discovery, customer orders, revenue, sales by genre and author, and remaining inventory.
+A MySQL database project for an online bookstore. The SQL script creates the database schema and provides queries for book discovery, customer orders, revenue, sales analysis, and inventory tracking.
 
 ## Database Tables
-- **book** — book title, author, genre, publication year, price, and stock.
-- **customer** — customer contact and location details.
-- **orders** — customer purchases, order dates, quantities, and order amounts.
+- **`book`** — book title, author, genre, publication year, price, and stock.
+- **`customer`** — customer name, contact details, city, and country.
+- **`orders`** — customer purchases, order dates, quantities, and total order amounts.
 
-## SQL Topics Demonstrated
-- Database and table creation
-- Filtering with `WHERE`, `LIKE`, `IN`, and `BETWEEN`
-- Aggregation with `SUM`, `AVG`, `MIN`, `MAX`, and `COUNT`
-- Joins and grouping with `GROUP BY` and `HAVING`
-- Sorting and limiting results
-- Inventory analysis using `LEFT JOIN` and `COALESCE`
+## Analysis Included
+- Filter books by genre and publication year
+- Retrieve customers by country
+- Find orders in a date range and above a specified amount
+- Calculate total stock and total revenue
+- Identify the highest-priced and lowest-stock books
+- Summarize books sold by genre and author
+- Find customers with at least two orders and the highest-spending customer
+- Calculate remaining stock after accounting for order quantities
+
+## SQL Skills Demonstrated
+Database and table creation, primary and foreign keys, filtering, aggregate functions, joins, grouping with `GROUP BY` and `HAVING`, sorting, subqueries, `LIMIT`, `LEFT JOIN`, and `COALESCE`.
+
+## Files
+- **`online_bookstore.sql`** — schema and analysis queries.
 
 ## How to Run
-1. Open the SQL script in MySQL Workbench.
+1. Open `online_bookstore.sql` in MySQL Workbench.
 2. Connect to your MySQL server.
-3. Review the script, then execute the database/table setup and queries.
-4. Ensure the referenced table and column names match your schema before running.
+3. Execute the script to create the database and tables.
+4. Import or insert your books, customers, and orders data.
+5. Run the analysis queries after loading data.
 
-## Note
-The source script uses a table named `book` but the Orders foreign key refers to `Books(Book_ID)`. In MySQL, table names may be case-sensitive depending on the system. Review this reference so it matches the actual table name (`book`). Also ensure `Book_ID` and `Customer_ID` types match their referenced key types.
+## Data Note
+The uploaded script defines the schema and queries but does not include sample `INSERT` statements or a data file. The analysis queries will return empty results until data is imported. The SQL script also aligns the order foreign keys with the `book` and `customer` tables and uses matching key types.
 
 ## Author
 Asish Kumar Sharma
